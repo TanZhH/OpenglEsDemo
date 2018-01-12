@@ -2,9 +2,11 @@ package com.example.tanzhuohui.openglesdemo;
 
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
+import android.util.Log;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
+
 
 /**
  * Created by tanzhuohui on 2017/12/15.
@@ -45,6 +47,7 @@ public class OpenGLRenderer implements GLSurfaceView.Renderer {
     public void onDrawFrame(GL10 gl) {
         if(openGLDemo != null) {
             openGLDemo.drawScene(gl);
+            Log.d("tzh" , "test");
         }
     }
 }
